@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Login </title>
     <style>
-    
+        body{
+          background:linear-gradient(to right, rgb(7, 122, 122), rgb(32, 88, 134), rgb(161, 180, 187));
+        }
         h1{
             text-align: center;
             font-weight: 300;
@@ -13,19 +15,63 @@
 
         .main_container{
             display: flex;
-            background:linear-gradient(rgb(0, 0, 0), rgb(3, 34, 70), rgb(6, 82, 133))s;
-            width: 100%;
-            height: autogg;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: rgb(138, 138, 138);
+            width: 20%;
+            height: 30ch;
+            padding: 3%;
+            border-radius: 2ch;
+            margin-left: 37%;
+            margin-top: 5%;
+        }
+
+        .package{
+             display: flex;
+        }
+
+        .login_text{
+            font-size: 2ch;
+            font-weight: 400;
+
+        }
+
+        input{
+            height: 3ch;
         }
     </style>
 </head>
+
 <body>
      <h1>Halaman Login</h1>
     <form>
+         
         <div class="main_container">
-            <h2>Login</h2>
+            <div class="package">
+               <div class="login_text">Login</div>
+            </div>
+
+            <div class="package">
+             <label for="username">Username : </label> <br>
+            <input type="text" name="username" > 
+            </div>
+           
+              <div class="package">
+             <label for="username">Username : </label> <br>
+            <input type="text" name="username" > 
+            </div>
+
+            
+            <button style="width: 30ch; height: 5ch;">Login</button>
+
         </div>
        
     </form>
+
+    <a href="home.html">
+         <button type="submit">Home</button>
+    </a>
+   
+    
 </body>
 </html>
